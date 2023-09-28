@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.container,#all,.button,.box_container,.board_result{
+    display: flex;
+}
+
+.container,#sercil,.button,.box_container{
+    justify-content: center;
+    align-items: center;
+}
+.inside_one h3,#sercil,.number_two h3,.button{
+    margin-top: 30px;
+}
+.number_one,.number_two{
+    border-radius: 30px;
+}
+
+.container{
+    width: 100%;
+    height: 800px;
+}
+
+#all{
+    background-color: white;
+}
+.number_one{
+    width: 320px;
+    height: 450px;
+    background: linear-gradient(#6743ff, #5a3df9, #4936f2,#3e32ee ,#342eea,#312ce8);
+}
+.inside_one{
+    text-align: center;
+}
+.inside_one h3{
+    color: #c8bfff;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+#sercil{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#4d22c9, #4a26d0, #472ada, #452ee1, #442fe4, #4533eb);
+    border-radius: 50%;
+    display: inline-flex;
+    flex-direction: column;
+}
+#sercil h2{
+    font-size: 70px;
+    color: #fffdff;
+}
+.text{
+    width: 72%;
+    text-align: center;
+    margin: 0 auto;
+}
+.text h2{
+    color: #fffdff;
+    margin: 15px 0;
+}
+.text p{
+    color: #c6c6ff;
+}
+.number_one p{
+    color: #8d7fff;
+}
+
+.number_two{
+    width: 320px;
+    height: 450px;
+}
+.number_two h3{
+    color: black;
+    text-transform: capitalize;
+}
+.inside_two{
+    width: 80%;
+    margin: 0 auto;
+}
+.box ,.button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+.first{
+    background-color: #fff6f5;
+    margin-top: 20px;
+}
+.sec{
+ background-color: #fffbf2;
+    margin: 20px 0;
+}
+.third{
+    background-color: #f2fbfa;
+    
+}
+.fourth{
+    background-color: #f3f3fd;
+    margin: 20px 0;
+}
+.button{
+    background-color: #303b59;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #5b3cf9;
+}
+.button p{
+    color: #fcfcff;
+}
+.box_container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.board_result p{
+    margin-left: 10px;
+}
+.R p, .R i{
+    color: #de656e;
+}
+.M p, .M i{
+    color: #efbd4a;
+}
+
+.V p, .V i{
+    color:#30b890;
+}
+
+.Vis p, .Vis i{
+    color: #333ae0;
+}
+span{
+    color: #a19d9c;
+}
+
+
+ @media screen and (max-width:600px) {
+    #all{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .container{
+        height: 900px;
+    }
+    .number_one{
+        width: 100%;
+        height: 430px;
+        border-radius: 0 0 30px 30px;
+    }
+    .number_two{
+        height: 420px;
+    }
+    .inside_two{
+        width: 100%;
+    }
+ }
